@@ -99,6 +99,7 @@ document.getElementById("car").src = car.image;
 // Insérez votre code ici
 let buttons = document.querySelectorAll("button");
 
+
 // Ne touche pas à ceci
 const catURL = [
   "https://s1.1zoom.me/big0/812/Cats_Glance_Kittens_558640_1280x720.jpg",
@@ -126,10 +127,17 @@ buttons.forEach((btn) => {
 
 // Exercice 8
 // Insérez votre code ici
-const output = document.getElementById("output").innerHTML
+const output = document.getElementById("output");
+output.innerHTML = `<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam beatae pariatur sint impedit dolores, ipsam in tempora adipisci placeat cupiditate a quibusdam ipsa eligendi maxime praesentium perferendis et distinctio non!</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png" alt="">`;
 
 // Exercice 9
 // Insérez votre code ici
+let tableau = ["Nikiema","Saidou",43,"Enseignant",1980];
+let listOutput = document.getElementById("listOutput");
+tableau.forEach(element => {
+  listOutput.innerHTML += `<li>${element}</li>`
+});
+
 
 // Exercice 10
 // Ne touchez pas au tableau
@@ -146,6 +154,7 @@ const icons = [
 ];
 
 // Insérez votre code ici
+let logo = document.getElementById("logo");
 
 // Exercice 11 : Optionnel
 // Insérez votre code ici
